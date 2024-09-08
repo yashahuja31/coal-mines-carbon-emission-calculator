@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="emission.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="finallogo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="emission.html">Emission Estimation</a></li>
+          <li><a href="neutrality.html">Carbon Neutrality</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign.html">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+    </header>
+
+  <div class="container">
+      <div class="main-content">
+          <h2>Emission Estimation</h2>
+          <p>Input data on various mining activities to estimate associated carbon emissions.</p>
+          <form id="emission-form">
+              <h3>Excavation</h3>
+              <label for="excavation-amount">Amount of coal excavated (tons):</label>
+              <input type="number" id="excavation-amount" name="excavation-amount" required>
+
+              <h3>Transportation</h3>
+              <label for="transport-distance">Average transportation distance (km):</label>
+              <input type="number" id="transport-distance" name="transport-distance" required>
+              <label for="transport-method">Transportation method:</label>
+              <select id="transport-method" name="transport-method" required>
+                  <option value="truck">Truck</option>
+                  <option value="rail">Rail</option>
+                  <option value="conveyor">Conveyor Belt</option>
+              </select>
+
+              <h3>Equipment Usage</h3>
+              <label for="equipment-hours">Total equipment operating hours:</label>
+              <input type="number" id="equipment-hours" name="equipment-hours" required>
+              <label for="equipment-type">Primary equipment type:</label>
+              <select id="equipment-type" name="equipment-type" required>
+                  <option value="diesel">Diesel-powered</option>
+                  <option value="electric">Electric-powered</option>
+                  <option value="hybrid">Hybrid</option>
+              </select>
+
+              <h3>Mine Type</h3>
+              <label for="mine-type">Mine type:</label>
+              <select id="mine-type" name="mine-type" required>
+                  <option value="underground">Underground</option>
+                  <option value="opencast">Open-cast</option>
+              </select>
+
+              <input type="submit" value="Calculate Emissions">
+          </form>
+
+          <div id="results" style="display: none;">
+              <h3>Emission Results</h3>
+              <p>Total estimated carbon emissions: <span id="total-emissions"></span> tons CO2e</p>
+              <p>Per capita emissions: <span id="per-capita-emissions"></span> tons CO2e per employee</p>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      // Placeholder for future JavaScript functionality
+      document.getElementById('emission-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Here we would normally send the data to the backend and receive results
+          // For now, we'll just show the results div with placeholder data
+          document.getElementById('results').style.display = 'block';
+          document.getElementById('total-emissions').textContent = '10000';
+          document.getElementById('per-capita-emissions').textContent = '50';
+      });
+  </script>
+</body>
+  </body>
+</html>

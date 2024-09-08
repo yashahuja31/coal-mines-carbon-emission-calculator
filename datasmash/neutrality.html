@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Neutrality - Coal Mine Carbon Calculator</title>
+   <link rel="stylesheet" href="neutrality.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="finallogo.png" alt="Logo" />
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="emission.html">Emission Estimation</a></li>
+            <li><a href="neutrality.html">Carbon Neutrality</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="sign.html">Sign Up</a></li>
+          </ul>
+          <div class="mobile-menu-icon">
+            <span>&#9776;</span>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Carbon Neutrality Pathways</h2>
+            <p>Explore different strategies to achieve carbon neutrality for your coal mine.</p>
+
+            <form id="neutrality-form">
+                <h3>Clean Technologies</h3>
+                <label for="ev-percentage">Percentage of electric vehicles to adopt:</label>
+                <input type="number" id="ev-percentage" name="ev-percentage" min="0" max="100" required>
+
+                <label for="methane-capture">Implement methane capture system:</label>
+                <select id="methane-capture" name="methane-capture" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="renewable-percentage">Percentage of energy from renewable sources:</label>
+                <input type="number" id="renewable-percentage" name="renewable-percentage" min="0" max="100" required>
+
+                <h3>Afforestation Offsets</h3>
+                <label for="afforestation-area">Area available for tree plantation (hectares):</label>
+                <input type="number" id="afforestation-area" name="afforestation-area" required>
+
+                <h3>Other Renewables</h3>
+                <label for="solar-capacity">Solar power capacity to install (kW):</label>
+                <input type="number" id="solar-capacity" name="solar-capacity" required>
+
+                <label for="wind-capacity">Wind power capacity to install (kW):</label>
+                <input type="number" id="wind-capacity" name="wind-capacity" required>
+
+                <h3>Carbon Credits</h3>
+                <label for="carbon-price">Current carbon credit market price ($/ton CO2e):</label>
+                <input type="number" id="carbon-price" name="carbon-price" required>
+
+                <input type="submit" value="Calculate Neutrality Pathways">
+            </form>
+
+            <div id="results" style="display: none;">
+                <h3>Neutrality Pathway Results</h3>
+                <p>Estimated emission reduction: <span id="emission-reduction"></span> tons CO2e</p>
+                <p>Afforestation offset: <span id="afforestation-offset"></span> tons CO2e</p>
+                <p>Renewable energy contribution: <span id="renewable-contribution"></span> tons CO2e</p>
+                <p>Potential carbon credits: <span id="carbon-credits"></span></p>
+                <p>Remaining emissions to offset: <span id="remaining-emissions"></span> tons CO2e</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Placeholder for future JavaScript functionality
+        document.getElementById('neutrality-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here we would normally send the data to the backend and receive results
+            // For now, we'll just show the results div with placeholder data
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('emission-reduction').textContent = '5000';
+            document.getElementById('afforestation-offset').textContent = '2000';
+            document.getElementById('renewable-contribution').textContent = '1500';
+            document.getElementById('carbon-credits').textContent = '$75,000';
+            document.getElementById('remaining-emissions').textContent = '1500';
+        });
+    </script>
+</body>
+</html>    

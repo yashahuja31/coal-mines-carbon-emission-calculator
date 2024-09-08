@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+/* Navbar styles */
+.navbar {
+  background-color: #152547e9;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  height: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 70px;
+  filter: invert();
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 40px;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  height: 1000px;
+  margin-top: 100px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* border: 2px solid black; */
+  height: 1300px;
+}
+
+h2,
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Results Section */
+#results {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#emission-reduction,
+#afforestation-offset,
+#renewable-contribution,
+#carbon-credits,
+#remaining-emissions {
+  font-weight: bold;
+  color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  input[type="number"],
+  select {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

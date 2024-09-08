@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coal Mine Carbon Footprint Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="finallogo.png" alt="Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="emission.html">Emission Estimation</a></li>
+          <li><a href="neutrality.html">Carbon Neutrality</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign.html">Sign Up</a></li>
+        </ul>
+       
+      </nav>
+    </header>
+        <div class="widgets">
+          <div class="widget">
+            <h3>Total Emissions</h3>
+            <p>1200 tons</p>
+          </div>
+          <div class="widget">
+            <h3>Energy Consumption</h3>
+            <p>500 MWh</p>
+          </div>
+          <div class="widget">
+            <h3>Methane Emissions</h3>
+            <p>800 tons</p>
+          </div>
+        </div>
+        <div class="chart-pathways">
+          <div class="chart">
+            <canvas id="emissionGraph"></canvas>
+          </div>
+          <div class="pathways">
+            <h3>Carbon Neutrality Pathways</h3>
+         
+            <ul class="pathway-list">
+              <li>Adopting Clean Technologies.</li>
+
+              <li>Afforestation and Carbon Offsets.</li>
+
+              <li>Renewable Energy Adoption.</li>
+
+              <li>Carbon Credits Calculation.</li>
+
+              <li> Sustainable Land Use and Forestry.</li>
+
+              <li>Energy Efficiency and Building Retrofits.</li>
+
+              <li>Carbon Pricing and Policy Frameworks.</li>
+
+            </ul>
+          </div>
+        </div>
+        <section class="help-section">
+          <div class="help-header">
+            <h2>Ways to Help the Coal Ministry Achieve Carbon Neutrality</h2>
+            <p>
+              Explore key strategies and technologies to reduce carbon emissions
+              and enhance sustainability in coal mining.
+            </p>
+          </div>
+          <div class="help-cards">
+            <div class="row1">
+            <div class="help-card">
+              <h3>Renewable Energy Integration</h3>
+              <p>
+                Adopt solar, wind, and other renewable energy sources to power
+                mining operations and reduce reliance on fossil fuels.
+              </p>
+            </div>
+
+            <div class="help-card">
+              <h3>Carbon Capture & Storage</h3>
+              <p>
+                Implement carbon capture and storage technologies to trap and
+                store CO2 emissions, preventing them from entering the
+                atmosphere.
+              </p>
+            </div>
+
+            <div class="help-card">
+              <h3>Energy Efficiency Improvements</h3>
+              <p>
+                Upgrade mining equipment and optimize processes to reduce energy
+                consumption and increase operational efficiency.
+              </p>
+            </div>
+          </div>
+          
+          <div class="row2">
+            <div class="help-card">
+              <h3>Reforestation Initiatives</h3>
+              <p>
+                Participate in reforestation and afforestation programs to
+                absorb carbon dioxide from the atmosphere and restore ecological
+                balance.
+              </p>
+            </div>
+         
+            <div class="help-card">
+              <h3>Water Conservation</h3>
+              <p>
+                Implement strategies to reduce water consumption in mining
+                activities and ensure sustainable water management practices.
+              </p>
+            </div>
+
+            <div class="help-card">
+              <h3>Waste Management</h3>
+              <p>
+                Adopt efficient waste management and recycling methods to
+                minimize environmental impact and ensure safe disposal of mining
+                waste.
+              </p>
+            </div>
+          </div>
+        
+        </section>
+        <section class="charts-section">
+          <div class="chart-container">
+            <h2>Carbon Emissions: Monthly and Yearly</h2>
+
+            <div class="chart-wrapper">
+              <h3>Daily Carbon Emissions</h3>
+              <canvas id="dailyEmissionsChart"></canvas>
+            </div>
+
+            <div class="chart-wrapper">
+              <h3>Monthly Carbon Emissions</h3>
+              <canvas id="monthlyEmissionsChart"></canvas>
+            </div>
+
+            <div class="chart-wrapper">
+              <h3>Yearly Carbon Emissions</h3>
+              <canvas id="yearlyEmissionsChart"></canvas>
+            </div>
+          </div>
+        </section>
+
+ <footer class="footer"> 
+          <div class="footer-content">
+            <div class="footer-left">
+              <h3>DATA SMASH</h3>
+              <p>Analytics made easier</p>
+            </div>
+
+            <div class="footer-middle">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-right">
+              <h4>Contact Us</h4>
+              <p>Email: info@coalmine.com</p>
+              <p>Phone: +123 456 7890</p>
+              <div class="social-media">
+                <a href="#" class="social-icon"
+                  ><img src="facebook-icon.png" alt="Facebook"
+                /></a>
+                <a href="#" class="social-icon"
+                  ><img src="twitter-icon.png" alt="Twitter"
+                /></a>
+                <a href="#" class="social-icon"
+                  ><img src="linkedin-icon.png" alt="LinkedIn"
+                /></a>
+                <a href="#" class="social-icon"
+                  ><img src="instagram-icon.png" alt="Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2024 Coal Mine Tracker. All rights reserved.</p>
+          </div>
+        </footer> 
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
