@@ -7,7 +7,7 @@
 
 /* Navbar styles */
 .navbar {
-  background-color: #152547e9;
+  background-color: #7eb53e;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -59,6 +59,7 @@
 }
 
 .container {
+  border: 2px solid black;
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
