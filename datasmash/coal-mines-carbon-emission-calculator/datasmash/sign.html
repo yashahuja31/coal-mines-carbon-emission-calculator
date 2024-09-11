@@ -66,18 +66,21 @@
       }
       .background {
         background-image: url(/public/Sustainability-Image.png);
-        background-repeat: no-repeat;
+        background-repeat: none;
         background-position: center;
         background-size: cover;
         width: 100%;
         height: 89%;
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
       .signup-container {
-        backdrop-filter: blur(70px); /* Blur effect for glass effect */
+        backdrop-filter: blur(50px); /* Blur effect for glass effect */
         -webkit-backdrop-filter: blur(10px); /* Safari Support */
         padding: 20px;
         border-radius: 8px;
@@ -130,14 +133,13 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="index.html"
-            ><img src="/public/finallogo.png" alt="Logo"
-          /></a>
+          <img src="public/finallogo.png" alt="Logo" />
         </div>
         <ul class="nav-links">
-          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="emission.html">Emission Estimation</a></li>
           <li><a href="neutrality.html">Carbon Neutrality</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="sign.html">Sign Up</a></li>
         </ul>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Coal Mine Carbon Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add Google Fonts for styling */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        height: 100vh;
+      }
+      .navbar {
+        background-color: #7eb53e;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+      }
+
+      .navbar .logo {
+        height: 80px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar .logo img {
+        height: 70px;
+        filter: invert();
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin-right: 40px;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links li a:hover {
+        color: #ffcc00;
+      }
+
+      .mobile-menu-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+      }
+
+      .contact-container {
+        width: 80%;
+        max-width: 1200px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0 auto;
+      }
+
+      .contact-info {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .contact-info h2 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .contact-info .social-icons {
+        display: flex;
+        gap: 20px;
+      }
+      .social-icons img {
+        height: 50px;
+      }
+
+      .social-icons img:hover {
+        height: 55px;
+        transition: 0.3s ease;
+      }
+
+      .social-icons a {
+        color: white;
+        background: #333;
+        border-radius: 50%;
+        padding: 10px;
+        display: inline-block;
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .contact-form {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .contact-form h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        border-color: #4a90e2;
+        outline: none;
+      }
+
+      .contact-form button {
+        background-color: #4a90e2;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background-color: #357abd;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .contact-container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="/public/finallogo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="emission.html">Emission Estimation</a></li>
+          <li><a href="neutrality.html">Carbon Neutrality</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="sign.html">Sign Up</a></li>
+        </ul>
+        <div class="mobile-menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+    </header>
+    <div class="contact-container">
+      <!-- Contact Information Section -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          We'd love to hear from you! Whether you're curious about carbon
+          neutrality pathways, need assistance with your calculations, or have
+          any other questions, our team is ready to answer all your questions.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"
+            ><i class="fab fa-facebook-f"
+              ><img src="public/facebook.png " alt="" /></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-twitter"
+              ><img src="public/twitter.png" alt="" /></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-linkedin-in"
+              ><img src="public/linkedin.png" alt="" /></i
+          ></a>
+          <a href="#"
+            ><i class="fab fa-instagram"
+              ><img src="public/instagram.png" alt="" /></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

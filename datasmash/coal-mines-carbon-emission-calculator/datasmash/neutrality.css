@@ -65,17 +65,14 @@ body {
 }
 
 .container {
-  max-width: 700px;
-  max-height: 910px;
+  max-width: 800px;
   margin: 50px auto;
-  padding: 10px 30px;
+  padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   border: 2px solid black;
-}
-.container p {
-  text-align: center;
+  height: 1300px;
 }
 
 h2,
@@ -85,12 +82,12 @@ h3 {
 }
 
 h2 {
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  font-size: 26px;
 }
 
 h3 {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 20px;
 }
 
@@ -98,12 +95,12 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 input[type="number"],
@@ -125,7 +122,6 @@ select:focus {
 
 input[type="submit"] {
   padding: 15px;
-  margin-top: 10px;
   background-color: #28a745;
   color: white;
   font-size: 16px;

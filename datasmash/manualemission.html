@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Emission Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+      }
+      input,
+      button {
+        margin: 10px 0;
+      }
+      canvas {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carbon Emission Calculator</h1>
+      <label for="coalAmount">Amount of Coal Excavated (tons):</label>
+      <input type="number" id="coalAmount" step="any" />
+      <label for="carbonContent">Carbon Content of Coal (%):</label>
+      <input type="number" id="carbonContent" step="any" />
+      <label for="electricityUsed">Electricity Used (kWh):</label>
+      <input type="number" id="electricityUsed" step="any" />
+      <label for="fuelDistance">Distance Traveled (km):</label>
+      <input type="number" id="fuelDistance" step="any" />
+      <label for="fuelConsumption">Fuel Consumption (L/km):</label>
+      <input type="number" id="fuelConsumption" step="any" />
+      <label for="fuelType">Fuel Type:</label>
+      <select id="fuelType">
+        <option value="diesel">Diesel</option>
+        <option value="gasoline">Gasoline</option>
+        <option value="naturalGas">Natural Gas</option>
+      </select>
+      <button onclick="calculateAndVisualize()">Visualize Data</button>
+
+      <div id="results">
+        <p id="coalEmissions">Coal Excavation Emissions: 0.00 t CO₂</p>
+        <p id="electricityEmissions">Electricity Emissions: 0.00 t CO₂</p>
+        <p id="transportationEmissions">Transportation Emissions: 0.00 t CO₂</p>
+      </div>
+
+      <canvas id="emissionChart"></canvas>
+    </div>
+
+    <script src="manualemission.js"></script>
+  </body>
+</html>
