@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "got": "^14.4.2"
+  },
+  "name": "coal-mines-cabron-emissions-calculator",
+  "version": "1.0.0",
+  "description": "a carbon emmsions calculator for the coal mines of india",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
